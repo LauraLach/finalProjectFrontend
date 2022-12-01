@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  border-bottom: 2px solid black;
+  /* border-radius: 10px; */
+  display: flex;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-right: 20px;
+  max-width: 100vw;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 0 20px;
+}
+nav a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav a:visited {
+  color: black;
+}
+nav a:hover,
+nav a:active {
+  color: #257939;
+}
+.navBar {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+.siteName p {
+  color: #257939;
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+.FormWrapper {
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 500px;
+  padding: 25px;
+}
+.FormWrapper h1 {
+  color: #0c6a23;
+  margin-top: 10px;
+}
+.FormElement {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 500px;
+}
+.FormElement input {
+  border: 2px solid black;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.FormElement label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.FormElement button {
+  background-color: #257939;
+  border: none;
+  border-radius: 10px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  max-width: 100px;
+  padding: 10px;
 }
