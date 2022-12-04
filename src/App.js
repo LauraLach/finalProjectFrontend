@@ -6,6 +6,9 @@ import './App.css';
 import CreateUserPage from "./pages/CreateUser";
 import LoginPage from "./pages/Login";
 import UserProfilePage from "./pages/UserProfile";
+import CreatePostPage from "./pages/CreatePost";
+import DashboardPage from "./pages/Dashboard";
+import FindFriendsPage from "./pages/FindFriends";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDw5rGNXlyQint4kTYVpiTVmyJzhNwOTRk",
@@ -48,7 +51,43 @@ function App() {
     {
       path: "/",
       element: (
+        <DashboardPage 
+          isLoading={isLoading} 
+          isLoggedIn={isLoggedIn}
+          userInformation={userInformation}
+          setIsLoggedIn={setIsLoggedIn}
+          setUserInformation={setUserInformation}
+        />
+      ),
+    },
+    {
+      path: "/user/:id",
+      element: (
         <UserProfilePage 
+          isLoading={isLoading} 
+          isLoggedIn={isLoggedIn}
+          userInformation={userInformation}
+          setIsLoggedIn={setIsLoggedIn}
+          setUserInformation={setUserInformation}
+        />
+      ),
+    },
+    {
+      path: "/create-post",
+      element: (
+        <CreatePostPage 
+          isLoading={isLoading} 
+          isLoggedIn={isLoggedIn}
+          userInformation={userInformation}
+          setIsLoggedIn={setIsLoggedIn}
+          setUserInformation={setUserInformation}
+        />
+      ),
+    },
+    {
+      path: "/find-friends",
+      element: (
+        <FindFriendsPage 
           isLoading={isLoading} 
           isLoggedIn={isLoggedIn}
           userInformation={userInformation}
@@ -68,7 +107,7 @@ function App() {
       ),
     },
     {
-      path: "/create",
+      path: "/create-user",
       element: (
         <CreateUserPage
         isLoggedIn={isLoggedIn} 
