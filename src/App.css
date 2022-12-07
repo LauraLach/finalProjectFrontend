@@ -1,7 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@500;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
 header {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   /* border-radius: 10px; */
   display: flex;
   padding: 10px;
@@ -32,6 +35,12 @@ nav a:hover,
 nav a:active {
   color: #257939;
 }
+.logout {
+  cursor: pointer;
+}
+.logout:hover {
+  color: #257939;
+}
 .navBar {
   display: flex;
   font-family: "Open Sans", sans-serif;
@@ -42,7 +51,7 @@ nav a:active {
   font-size: 30px;
 }
 .FormWrapper {
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
@@ -60,7 +69,7 @@ nav a:active {
   max-width: 500px;
 }
 .FormElement input {
-  border: 2px solid black;
+  border: 3px solid black;
   font-size: 20px;
   margin-bottom: 30px;
   padding: 10px;
@@ -79,4 +88,82 @@ nav a:active {
   margin-top: 10px;
   max-width: 100px;
   padding: 10px;
+}
+.DashWrapper {
+  border: 3px solid black;
+  border-radius: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 550px;
+  padding: 10px 40px;
+}
+.DashWrapper h1 {
+  color: #0c6a23;
+  margin-top: 10px;
+}
+.DashWrapper h2 {
+  color: #0c6a23;
+  font-size: 28px;
+  margin: 12px 8px 0px 20px;
+}
+.userPost {
+  border: 3px solid black;
+  border-radius: 15px;
+  /* margin: 0 auto; */
+  margin-bottom: 25px;
+  max-width: 545px;
+  min-height: 160px;
+}
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.ratingWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.rating {
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 0px 0px 0px 15px;
+  border-style: none none solid solid;
+  display: flex;
+  justify-content: flex-end;
+  width: 75px;
+  height: 45px;
+}
+.rating h3 {
+  color: #0c6a23;
+  margin-right: 10px;
+}
+.resInfo {
+  display: flex;
+  align-items: flex-end;
+}
+.resInfo h3 {
+  /* margin-top: 22px; */
+  /* margin-bottom: 0px; */
+}
+.resInfo p {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.resAddress {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.resReview {
+  font-size: 16px;
+  margin: 0px 15px 0px 20px;
+  /* padding-right: 50px; */
+  font-weight: 500;
+}
+.postFooter {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  margin: 0px 20px;
 }

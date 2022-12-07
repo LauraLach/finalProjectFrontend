@@ -19,16 +19,8 @@ function UserProfilePage ({ isLoading, isLoggedIn, setIsLoggedIn, setUserInforma
         <div className="FormWrapper"> 
             <h1>User Profile</h1>
             <p>
-                <strong>Display Name: </strong>
+                <strong>Username: </strong>
                 {userInformation.displayName}
-            </p>
-            <p>
-                <strong>Email: </strong>
-                {userInformation.email}
-            </p>
-            <p>
-                <strong>UID: </strong>
-                {userInformation.uid}
             </p>
         </div>
     </>

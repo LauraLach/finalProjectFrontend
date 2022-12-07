@@ -9,6 +9,8 @@ function CreatePostPage ({ isLoading, isLoggedIn, setIsLoggedIn, setUserInformat
         if(!isLoggedIn && !isLoading) navigate('/login');
     }, [isLoading, isLoggedIn, navigate]);
     
+    
+
     return ( 
     <>
         <Header 

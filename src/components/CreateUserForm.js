@@ -9,6 +9,9 @@ function CreateUserForm({ signUpUser }) {
             <label htmlFor="password">Password</label>
             <input type="password" name="password" />
 
+            <label htmlFor="displayName">Username</label>
+            <input type="displayName" name="displayName" />
+
             <button type="submit">Submit</button>
         </form>
     );
