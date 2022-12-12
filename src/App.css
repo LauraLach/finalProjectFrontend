@@ -56,6 +56,7 @@ nav a:active {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   max-width: 500px;
   padding: 25px;
 }
@@ -67,6 +68,7 @@ nav a:active {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  /* margin-bottom: 10px; */
 }
 .FormElement input {
   border: 3px solid black;
@@ -95,14 +97,17 @@ nav a:active {
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
   margin-top: 50px;
-  max-width: 550px;
+  margin-bottom: 50px;
+  max-width: 650px;
   padding: 10px 40px;
 }
-.DashWrapper h1 {
+.DashWrapper h1,
+.ProfileWrapper h1 {
   color: #0c6a23;
   margin-top: 10px;
 }
-.DashWrapper h2 {
+.DashWrapper h2,
+.ProfileWrapper h2 {
   color: #0c6a23;
   font-size: 28px;
   margin: 12px 8px 0px 20px;
@@ -112,7 +117,8 @@ nav a:active {
   border-radius: 15px;
   /* margin: 0 auto; */
   margin-bottom: 25px;
-  max-width: 545px;
+  /* max-width: 545px; */
+  max-width: 560px;
   min-height: 160px;
 }
 .postHeader {
@@ -166,4 +172,68 @@ nav a:active {
   font-weight: 700;
   justify-content: space-between;
   margin: 0px 20px;
+}
+.ProfileWrapper {
+  border: 3px solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  max-width: 900px;
+  padding: 0px 40px;
+}
+.yourFriends {
+  width: 215px;
+  border-right: 3px solid black;
+  padding-right: 30px;
+}
+.yourFriends p {
+  font-weight: 700;
+}
+.plus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 0px; */
+}
+.plus p {
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.plus p:hover {
+  font-weight: 700;
+  color: #257939;
+  cursor: pointer;
+}
+.plus a {
+  text-decoration: none;
+}
+.typeAndRating {
+  display: flex;
+}
+.ratingInputWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 40%;
+}
+.foodTypeWrapper input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 11px;
+}
+textarea {
+  resize: none;
+  border: 3px solid black;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  height: 100px;
 }

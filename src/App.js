@@ -21,14 +21,14 @@ const firebaseConfig = {
 };
 
 function App() {
-  const [appInitialized, setAppInitialized] = useState(false);
+  const [appInitialized, setAppInitialized] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userInformation, setUserInformation] = useState({});
 
   useEffect(() => {
-    initializeApp(firebaseConfig);
-    setAppInitialized(true);
+    const app = initializeApp(firebaseConfig);
+    setAppInitialized(app);
   }, []);
 
   useEffect(() => {
@@ -52,6 +52,7 @@ function App() {
       path: "/",
       element: (
         <DashboardPage 
+          app={appInitialized}
           isLoading={isLoading} 
           isLoggedIn={isLoggedIn}
           userInformation={userInformation}
@@ -76,6 +77,7 @@ function App() {
       path: "/create-post",
       element: (
         <CreatePostPage 
+          app={initializeApp}
           isLoading={isLoading} 
           isLoggedIn={isLoggedIn}
           userInformation={userInformation}

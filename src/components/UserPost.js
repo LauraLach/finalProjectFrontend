@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-function UserPost({address, postDate, rating, resName, resType, review, username}) {
+function UserPost({address, postDate, rating, resName, foodType, review, username}) {
     // const postDate = useMemo(() => {
     //     if (!date) return '';
     //     const parsedDate = new Date(date);
@@ -12,13 +12,13 @@ function UserPost({address, postDate, rating, resName, resType, review, username
 
     return (
         <div className="userPost">
-            <div class="postHeader">
-                <div class="resInfo">
+            <div className="postHeader">
+                <div className="resInfo">
                     <h2>{resName}</h2>
-                    <p className="resType">{resType}</p>
+                    <p className="foodType">{foodType}</p>
                 </div>
-                <div class="ratingWrapper">
-                    <div class="rating">
+                <div className="ratingWrapper">
+                    <div className="rating">
                         <h3>{rating}</h3>
                     </div>
                 </div>
@@ -27,7 +27,7 @@ function UserPost({address, postDate, rating, resName, resType, review, username
                 <h3 className="resAddress">{address}</h3>
                 <p className="resReview">{review}</p>
             </div>
-            <div class="postFooter">
+            <div className="postFooter">
                 <p className="username">{username}</p>
                 <p className="userPostDate">{postDate}</p>
             </div>
