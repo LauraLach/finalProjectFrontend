@@ -62,9 +62,10 @@ function App() {
       ),
     },
     {
-      path: "/user/:id",
+      path: "/user",
       element: (
         <UserProfilePage 
+          app={appInitialized}
           isLoading={isLoading} 
           isLoggedIn={isLoggedIn}
           userInformation={userInformation}

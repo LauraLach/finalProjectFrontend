@@ -1,14 +1,6 @@
-import React, { useMemo } from "react";
+import React from "react";
 
 function UserPost({address, postDate, rating, resName, foodType, review, username}) {
-    // const postDate = useMemo(() => {
-    //     if (!date) return '';
-    //     const parsedDate = new Date(date);
-    //     return parsedDate.toDateString();}, 
-    //     [date]);
-
-    // let postDate = new Date();
-
 
     return (
         <div className="userPost">
@@ -19,7 +11,7 @@ function UserPost({address, postDate, rating, resName, foodType, review, usernam
                 </div>
                 <div className="ratingWrapper">
                     <div className="rating">
-                        <h3>{rating}</h3>
+                        <h3>{rating}/10</h3>
                     </div>
                 </div>
             </div>

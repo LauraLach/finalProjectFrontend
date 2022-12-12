@@ -3,7 +3,6 @@ import UserPost from "./UserPost";
 
 function CreatePostForm({ createPost }) {
     return (
-        // <form className="FormElement">
         <form className="FormElement" onSubmit={(e) => createPost(e)}>
             <label htmlFor="resName">Restaurant Name</label>
             <input type="text" name="resName" />
@@ -24,7 +23,6 @@ function CreatePostForm({ createPost }) {
 
             <label htmlFor="review">Review</label>
             <textarea name="review"></textarea>
-            {/* <input type="text" name="review" className="reviewInput"/> */}
 
             <button type="submit">Post</button>
         </form>

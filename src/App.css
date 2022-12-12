@@ -182,17 +182,17 @@ nav a:active {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 10px;
-  max-width: 900px;
-  padding: 0px 40px;
+  max-width: 650px;
+  padding: 10px 40px;
 }
-.yourFriends {
+/* .yourFriends {
   width: 215px;
   border-right: 3px solid black;
   padding-right: 30px;
 }
 .yourFriends p {
   font-weight: 700;
-}
+} */
 .plus {
   display: flex;
   justify-content: space-between;

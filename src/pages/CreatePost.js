@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { collection, addDoc, getFirestore } from "firebase/firestore";
 import Header from "../components/Header";
 import CreatePostForm from "../components/CreatePostForm";
@@ -9,13 +8,12 @@ function CreatePostPage ({ app, isLoading, isLoggedIn, setIsLoggedIn, setUserInf
 
     const navigate = useNavigate();
 
-    // const firestore = require("firebase/firestore");
-    
-
     useEffect(() => {
         if(!isLoggedIn && !isLoading) navigate('/login');
     }, [isLoading, isLoggedIn, navigate]);
-    
+
+    let date = new Date();
+
     const createPost = useCallback (
         async (e) => {
             e.preventDefault();
@@ -26,7 +24,9 @@ function CreatePostPage ({ app, isLoading, isLoggedIn, setIsLoggedIn, setUserInf
             const foodType = e.currentTarget.foodType.value;
             const rating = e.currentTarget.rating.value;
             const review = e.currentTarget.review.value;
-            const username = userInformation.displayName;
+            const postDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();;
+            // const username = userInformation.displayName;
+            const username = userInformation.email.substring(0, userInformation.email.indexOf('@'));
             const userID = userInformation.uid;
 
             try {
@@ -37,13 +37,14 @@ function CreatePostPage ({ app, isLoading, isLoggedIn, setIsLoggedIn, setUserInf
                     foodType,
                     rating,
                     review,
+                    postDate,
                     userID: userID,
                 });
                 console.log("Document written with ID: ", docRef.id);
-            } catch (e) {
-                console.error("Error adding document: ", e)
-            }
-        navigate("/user/:id")
+                } catch (e) {
+                    console.error("Error adding document: ", e)
+                }
+                navigate("/user/:id")
             }, [app, userInformation]
         );
 
