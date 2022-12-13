@@ -19,8 +19,6 @@ function CreateUserPage ({ isLoggedIn, setIsLoggedIn, setUserInformation }) {
             const email = e.currentTarget.email.value;
             const password = e.currentTarget.password.value;
 
-            console.log({email, password});
-
             const auth = getAuth();
 
             createUserWithEmailAndPassword(auth, email, password)

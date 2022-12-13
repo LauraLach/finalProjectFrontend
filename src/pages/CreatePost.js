@@ -60,6 +60,6 @@ function CreatePostPage ({ app, isLoading, isLoggedIn, setIsLoggedIn, setUserInf
         </div>
     </>
     );
-    }
+}
 
 export default CreatePostPage;
