@@ -8,7 +8,6 @@ import LoginPage from "./pages/Login";
 import UserProfilePage from "./pages/UserProfile";
 import CreatePostPage from "./pages/CreatePost";
 import DashboardPage from "./pages/Dashboard";
-import FindFriendsPage from "./pages/FindFriends";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDw5rGNXlyQint4kTYVpiTVmyJzhNwOTRk",
@@ -79,18 +78,6 @@ function App() {
       element: (
         <CreatePostPage 
           app={initializeApp}
-          isLoading={isLoading} 
-          isLoggedIn={isLoggedIn}
-          userInformation={userInformation}
-          setIsLoggedIn={setIsLoggedIn}
-          setUserInformation={setUserInformation}
-        />
-      ),
-    },
-    {
-      path: "/find-friends",
-      element: (
-        <FindFriendsPage 
           isLoading={isLoading} 
           isLoggedIn={isLoggedIn}
           userInformation={userInformation}

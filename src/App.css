@@ -5,7 +5,6 @@
 }
 header {
   border-bottom: 3px solid black;
-  /* border-radius: 10px; */
   display: flex;
   padding: 10px;
 }
@@ -55,8 +54,8 @@ nav a:active {
   border-radius: 10px;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
-  margin-top: 50px;
   margin-bottom: 50px;
+  margin-top: 50px;
   max-width: 500px;
   padding: 25px;
 }
@@ -68,7 +67,6 @@ nav a:active {
   display: flex;
   flex-direction: column;
   max-width: 500px;
-  /* margin-bottom: 10px; */
 }
 .FormElement input {
   border: 3px solid black;
@@ -96,8 +94,8 @@ nav a:active {
   border-radius: 15px;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
-  margin-top: 50px;
   margin-bottom: 50px;
+  margin-top: 50px;
   max-width: 650px;
   padding: 10px 40px;
 }
@@ -115,10 +113,7 @@ nav a:active {
 .userPost {
   border: 3px solid black;
   border-radius: 15px;
-  /* margin: 0 auto; */
   margin-bottom: 25px;
-  /* max-width: 545px; */
-  max-width: 560px;
   min-height: 160px;
 }
 .postHeader {
@@ -135,21 +130,17 @@ nav a:active {
   border-radius: 0px 0px 0px 15px;
   border-style: none none solid solid;
   display: flex;
+  height: 45px;
   justify-content: flex-end;
   width: 75px;
-  height: 45px;
 }
 .rating h3 {
   color: #0c6a23;
   margin-right: 10px;
 }
 .resInfo {
-  display: flex;
   align-items: flex-end;
-}
-.resInfo h3 {
-  /* margin-top: 22px; */
-  /* margin-bottom: 0px; */
+  display: flex;
 }
 .resInfo p {
   font-size: 16px;
@@ -158,14 +149,13 @@ nav a:active {
 }
 .resAddress {
   font-size: 16px;
-  margin-top: 0px;
   margin-left: 20px;
+  margin-top: 0px;
 }
 .resReview {
   font-size: 16px;
-  margin: 0px 15px 0px 20px;
-  /* padding-right: 50px; */
   font-weight: 500;
+  margin: 0px 15px 0px 20px;
 }
 .postFooter {
   display: flex;
@@ -176,28 +166,17 @@ nav a:active {
 .ProfileWrapper {
   border: 3px solid black;
   border-radius: 15px;
-  display: flex;
-  justify-content: space-between;
   font-family: "Open Sans", sans-serif;
   margin: 0 auto;
+  margin-bottom: 50px;
   margin-top: 50px;
-  margin-bottom: 10px;
   max-width: 650px;
   padding: 10px 40px;
 }
-/* .yourFriends {
-  width: 215px;
-  border-right: 3px solid black;
-  padding-right: 30px;
-}
-.yourFriends p {
-  font-weight: 700;
-} */
 .plus {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* margin-bottom: 0px; */
 }
 .plus p {
   color: black;
@@ -207,9 +186,9 @@ nav a:active {
   margin-bottom: 10px;
 }
 .plus p:hover {
-  font-weight: 700;
   color: #257939;
   cursor: pointer;
+  font-weight: 700;
 }
 .plus a {
   text-decoration: none;
@@ -230,10 +209,10 @@ nav a:active {
   margin-top: 11px;
 }
 textarea {
-  resize: none;
   border: 3px solid black;
   font-size: 20px;
+  height: 100px;
   margin-bottom: 30px;
   padding: 10px;
-  height: 100px;
+  resize: none;
 }

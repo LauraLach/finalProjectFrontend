@@ -18,7 +18,6 @@ function CreateUserPage ({ isLoggedIn, setIsLoggedIn, setUserInformation }) {
 
             const email = e.currentTarget.email.value;
             const password = e.currentTarget.password.value;
-            const displayName = e.currentTarget.displayName.value;
 
             console.log({email, password});
 

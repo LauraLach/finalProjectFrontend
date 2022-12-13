@@ -1,5 +1,4 @@
 import React from "react";
-import UserPost from "./UserPost";
 
 function CreatePostForm({ createPost }) {
     return (
@@ -17,7 +16,7 @@ function CreatePostForm({ createPost }) {
                 </div>
                 <div className="ratingInputWrapper">
                     <label htmlFor="rating">Rating (1-10)</label>
-                    <input type="text" name="rating" />
+                    <input type="number" name="rating" />
                 </div>
             </div>
 

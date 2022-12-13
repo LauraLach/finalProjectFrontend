@@ -1,6 +1,6 @@
 import React from "react";
 
-function UserPost({address, postDate, rating, resName, foodType, review, username}) {
+function UserPost({address, foodType, postDate, rating, resName, review, username}) {
 
     return (
         <div className="userPost">

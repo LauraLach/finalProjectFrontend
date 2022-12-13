@@ -1,6 +1,6 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { collection, addDoc, getFirestore } from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 import Header from "../components/Header";
 import CreatePostForm from "../components/CreatePostForm";
 
@@ -24,8 +24,7 @@ function CreatePostPage ({ app, isLoading, isLoggedIn, setIsLoggedIn, setUserInf
             const foodType = e.currentTarget.foodType.value;
             const rating = e.currentTarget.rating.value;
             const review = e.currentTarget.review.value;
-            const postDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();;
-            // const username = userInformation.displayName;
+            const postDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
             const username = userInformation.email.substring(0, userInformation.email.indexOf('@'));
             const userID = userInformation.uid;
 
@@ -44,7 +43,7 @@ function CreatePostPage ({ app, isLoading, isLoggedIn, setIsLoggedIn, setUserInf
                 } catch (e) {
                     console.error("Error adding document: ", e)
                 }
-                navigate("/user/:id")
+                navigate("/user")
             }, [app, userInformation]
         );
 
